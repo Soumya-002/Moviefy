@@ -1,0 +1,69 @@
+.nav {
+  height: auto;
+}
+.mains {
+  height: 1000px;
+}
+.card {
+  width: 300px;
+  margin: 1rem;
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+  height: 75%;
+}
+.card img {
+  width: 100%;
+}
+.overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1rem;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.card:hover .overview {
+  transform: translateY(0);
+}
+.genre {
+  color: rgb(3, 52, 151);
+  background-color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+.heading {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.orange {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.star-full {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.star-half {
+    color: gold;
+    font-size: 1.5rem;
+}
+
+.star-empty {
+    color: lightgray;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 400px) {
+  #container {
+    margin-left: 50px;
+  }
+}
